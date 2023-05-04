@@ -422,6 +422,7 @@ button {
 .customers-item {
   width: calc((100% - 120px) / 6);
   height: 88px;
+  transition: var(--anim-slow);
 }
 
 /* Social Icons */
