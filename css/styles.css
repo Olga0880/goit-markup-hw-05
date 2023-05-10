@@ -406,13 +406,13 @@ button {
   align-items: center;
   justify-content: center;
   color: #8e8f99;
-  transition-property: color, background-color;
+  transition-property: color, border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .customer-link:hover,
 .customer-link:focus {
-  border-color: 1px solid var(--accent-txt-cl);
+  border-color: var(--accent-txt-cl);
   color: var(--accent-txt-cl);
 }
 .about-list-icon {
@@ -554,7 +554,7 @@ button {
   border: 1px solid var(--btn-bg-cl);
   padding: 12px 24px;
   border-radius: 4px;
-  transition-property: color, background-color;
+  transition-property: color, background-color, border-color, box-shadow;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -563,7 +563,7 @@ button {
   color: var(--main-bg-cl);
   background-color: var(--accent-txt-cl);
   cursor: pointer;
-  border: 1px solid transparent;
+  border-color: transparent;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -585,7 +585,7 @@ button {
 }
 .portf-element {
   display: block;
-  transition-property: color, background-color;
+  transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -692,7 +692,8 @@ button {
 .modal-btn {
   display: flex;
   position: absolute;
-  margin-left: auto;
+  top: 24px;
+  right: 24px;
   align-items: center;
   justify-content: center;
   width: 24px;
